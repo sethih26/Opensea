@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenSea Eligibility Checker</title><link rel="stylesheet" href="/style.css"></head><body><main>
+<header><small>OPENSEA • DROP TOOL</small><h1>Mint Eligibility Checker</h1><p>Check wallets against an OpenSea mint/drop.</p></header>
+<section><label>1. OpenSea mint page</label><input id="url" placeholder="https://opensea.io/drops/..."><em>Use the OpenSea drop or collection URL.</em></section>
+<section><label>2. Wallet addresses</label><textarea id="wallets" rows="10" placeholder="0x123...\n0x456...\n0x789..."></textarea><em>One wallet per line.</em></section>
+<button id="check">Check Eligibility</button><div id="error"></div><div id="load">Checking OpenSea…</div>
+<section id="drop"></section><div id="stats"></div><section id="res"><h2>Results <button id="csv">Export CSV</button></h2><div id="table"></div></section>
+<footer>API credentials remain on the backend. Do not put OpenSea keys or JWTs in frontend code.</footer>
+<script src="/app.js"></script></main></body></html>
